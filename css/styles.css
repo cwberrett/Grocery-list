@@ -24,27 +24,37 @@ CSS reset
 General styles (General Module, wrapping around the modules bellow)
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
-
+html {
+  background: url('../images/produce_background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body {
 -moz-box-sizing: border-box;
   box-sizing: border-box;
   }
 
-
+h1, h2 {
+	color: white;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
 /* -------------------------------------
 Header styles (Main Module)
     (all the styles inside the < header > or < nav > tags)
 */
 header {
-	background-color: #F23F2C;
+	/*background-color: #F23F2C;*/
+	/*background-image: url('../images/produce_background.jpg');*/
+	background-size: cover;
 	text-align: center;
-	height: 7rem;
+	height: 12rem;
 	padding-top: .1rem;
 }
 header h1 {
-	padding-top: 1.5rem;
-	color: white;
-	text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+	padding-top: 4rem;
+	font-size: 3rem;
 }
 
 /* -------------------------------------
@@ -53,13 +63,8 @@ Content styles (Main Module)
 */
 .content {
 	text-align: center;
-	background-image: url("../images/produce_background.jpg");
-	background-position: center bottom;
-	background-size: cover;
-	padding: 5rem;
 }
 .input-form {
-	margin-top: 4rem;
 	font-size: 1.5rem;
 }
 .input-form input {
@@ -71,12 +76,11 @@ Content styles (Main Module)
 	list-style-type: none;
 	text-align: left;
 	background-image: url("../images/pad.png");
-	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 15rem;
 	margin: 1rem auto;
-	padding: 3rem 2rem;
+	padding: 6rem 2rem;
 }
 .list ul li {
 	margin-left: 2rem;
@@ -101,7 +105,11 @@ Content styles (Main Module)
 Footer styles (Main Module)
     (all the styles inside the < footer > tag)
 */footer{
-background-color: #F23F2C;
+	/*background-image: url("../images/grocery.jpg");*/
+	background-size: cover;
+	height: 12rem;
+}
+/*background-color: #F23F2C;
 	text-align: center;
 	height: 7rem;
 	padding-top: .1rem;
