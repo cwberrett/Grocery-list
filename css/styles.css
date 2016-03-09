@@ -1,0 +1,115 @@
+CSS reset
+    (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+    (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+-moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+
+/* -------------------------------------
+Header styles (Main Module)
+    (all the styles inside the < header > or < nav > tags)
+*/
+header {
+	background-color: #F23F2C;
+	text-align: center;
+	height: 7rem;
+	padding-top: .1rem;
+}
+header h1 {
+	padding-top: 1.5rem;
+	color: white;
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+}
+
+/* -------------------------------------
+Content styles (Main Module)
+    (all the styles inside the < sections > or < aside > tags)
+*/
+.content {
+	text-align: center;
+	background-image: url("../images/produce_background.jpg");
+	background-position: center bottom;
+	background-size: cover;
+	padding: 5rem;
+}
+.input-form {
+	margin-top: 4rem;
+	font-size: 1.5rem;
+}
+.input-form input {
+}
+.list {
+	text-align: center;
+}
+.list ul {
+	list-style-type: none;
+	text-align: left;
+	background-image: url("../images/pad.png");
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 15rem;
+	margin: 1rem auto;
+	padding: 3rem 2rem;
+}
+.list ul li {
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+}
+.list-item {
+	margin: .5rem;
+	background-color: #FFF6D5;
+	padding: .25rem;
+}
+.delete {
+	float: right;
+}
+.delete-all {
+	margin: 1rem auto;
+}
+.checked {
+	text-decoration: line-through;
+	color: red;
+}
+/* -------------------------------------
+Footer styles (Main Module)
+    (all the styles inside the < footer > tag)
+*/footer{
+background-color: #F23F2C;
+	text-align: center;
+	height: 7rem;
+	padding-top: .1rem;
+}
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+    (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
